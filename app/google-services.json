@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "791360908977",
+    "firebase_url": "https://cardtest-9c362.firebaseio.com",
+    "project_id": "cardtest-9c362",
+    "storage_bucket": "cardtest-9c362.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791360908977:android:396b3bcfc8590da7",
+        "android_client_info": {
+          "package_name": "com.vumee.cardtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791360908977-mgn5ppqqilt6rt3pkdkfqj8qsamu706o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vumee.cardtest",
+            "certificate_hash": "6055951a0745569ea9a59f29572089fd113c56af"
+          }
+        },
+        {
+          "client_id": "791360908977-q03jod96rrfcsujtd2ro5m6gnkkanup3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt9Bo_TE2ztyYbGi7C8o4iNMSJqOgYSYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791360908977-q03jod96rrfcsujtd2ro5m6gnkkanup3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

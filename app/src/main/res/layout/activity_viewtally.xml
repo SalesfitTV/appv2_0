@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewtally"
+    android:background="@color/cardview_dark_background">
+
+
+    <!-- bottom navigation -->
+
+    <ImageView
+        android:id="@+id/blue_oval"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/openrate_bar" />
+
+    <ImageView
+        android:id="@+id/green_oval"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/openrate_bar" />
+
+    <ImageView
+        android:id="@+id/green_bar"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/openrate_bar" />
+
+    <ImageView
+        android:id="@+id/green_bar2"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/totalstats_bar" />
+
+    <ImageView
+        android:id="@+id/purple_bar"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.869"
+        app:srcCompat="@drawable/totalstats_bar" />
+
+    <ImageView
+        android:id="@+id/purple_bar2"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.869"
+        app:srcCompat="@drawable/totalstats_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- top toolbar -->
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+        <!-- Middle section (body) -->
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginTop="-2dp">
+
+        </RelativeLayout>
+
+
+        <!-- bottom navigation -->
+        <include layout="@layout/layout_bottom_navigation_view_tally" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MY DASHBOARD"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/blue_oval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/title_1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="Messages sent this month"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/blue_oval"
+        app:layout_constraintEnd_toEndOf="@+id/blue_oval"
+        app:layout_constraintStart_toStartOf="@+id/blue_oval"
+        app:layout_constraintTop_toTopOf="@+id/blue_oval"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/title_1_value"
+        android:layout_width="112dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_2"
+        app:layout_constraintEnd_toEndOf="@+id/green_oval"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/green_oval"
+        app:layout_constraintTop_toTopOf="@+id/green_oval"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Message views this month"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/green_oval"
+        app:layout_constraintEnd_toEndOf="@+id/green_oval"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/green_oval"
+        app:layout_constraintTop_toTopOf="@+id/green_oval"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <TextView
+        android:id="@+id/title_2_value"
+        android:layout_width="112dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_1"
+        app:layout_constraintEnd_toEndOf="@+id/blue_oval"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/blue_oval"
+        app:layout_constraintTop_toTopOf="@+id/blue_oval"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/monthly_opens"
+        android:layout_width="136dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="bottom"
+        android:text="Open rate this month"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/green_bar"
+        app:layout_constraintEnd_toEndOf="@+id/green_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/green_bar"
+        app:layout_constraintTop_toTopOf="@+id/green_bar"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <TextView
+        android:id="@+id/monthly_opens_value"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/monthly_opens"
+        app:layout_constraintEnd_toEndOf="@+id/green_bar"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/green_bar"
+        app:layout_constraintTop_toTopOf="@+id/green_bar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/total_opens"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        android:text="Message open rate total"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/green_bar2"
+        app:layout_constraintEnd_toEndOf="@+id/green_bar2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/green_bar2"
+        app:layout_constraintTop_toTopOf="@+id/green_bar2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/total_opens_value"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="@+id/total_opens"
+        app:layout_constraintEnd_toEndOf="@+id/green_bar2"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/green_bar2"
+        app:layout_constraintTop_toTopOf="@+id/green_bar2"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/total_viewed"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        android:text="Total customers viewed"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_bar"
+        app:layout_constraintEnd_toEndOf="@+id/purple_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/purple_bar"
+        app:layout_constraintTop_toTopOf="@+id/purple_bar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/total_viewed_value"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="@+id/total_viewed"
+        app:layout_constraintEnd_toEndOf="@+id/purple_bar"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/purple_bar2"
+        app:layout_constraintTop_toTopOf="@+id/purple_bar"
+        app:layout_constraintVertical_bias="0.038" />
+    <TextView
+        android:id="@+id/total_sent"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="bottom"
+        android:text="Total customers contacted"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_bar"
+        app:layout_constraintEnd_toEndOf="@+id/purple_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/purple_bar2"
+        app:layout_constraintTop_toTopOf="@+id/purple_bar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/total_sent_value"
+        android:layout_width="171dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_bar"
+        app:layout_constraintEnd_toEndOf="@+id/purple_bar"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/purple_bar2"
+        app:layout_constraintTop_toTopOf="@+id/purple_bar2"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.009" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

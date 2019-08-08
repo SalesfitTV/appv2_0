@@ -1,0 +1,31 @@
+<resources>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="app_name">Android App</string>
+    <string name="contact_number">Venue Name</string>
+    <string name="homebuttondesc" />
+    <string name="smssendtext">smssend</string>
+    <string name="backbuttondesc">backbuttondesc</string>
+    <string name="save_new_contact">Save new contact</string>
+    <string name="send_another_message">Send another message</string>
+    <string name="send_to_another_contact">send to another contact</string>
+    <string name="main_menu">main menu</string>
+    <string name="sentsuccesfulheading">sentsuccesfulheading</string>
+    <string name="text_copy_default">Hey, as discussed please have a look at the video below:</string>
+    <string name="_text">Send SMS</string>
+    <string name="choose_from_contacts">choose from contacts</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="sms_text_2">SMS Text</string>
+    <string name="please_enter_sms_text">Please enter SMS text</string>
+    <string name="sms_message">SMS Message</string>
+    <string name="hey_as_discussed_please_see_the_below">Hey, as discussed please see the below:</string>
+    <string name="venue_name">Venue Name</string>
+    <string name="enter_customer_name">Enter Customer Name</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="share_url">Share URL</string>
+    <string name="default_notification_channel_id">1</string>
+    <string name="fcm_message">2</string>
+    <string name="title_activity_username">UsernameActivity</string>
+    <string name="email_id">Email ID</string>
+</resources>
